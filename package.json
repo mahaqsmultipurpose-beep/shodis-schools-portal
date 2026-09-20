@@ -1,0 +1,10 @@
+{
+  "name": "shodis-schools-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Netlify Functions + Database backend for the Uncle Shodis Schools portal (Student Records module)",
+  "dependencies": {
+    "@netlify/database": "^1.0.0"
+  }
+}
