@@ -25,11 +25,10 @@ function checkAuth(event) {
 }
 
 function json(statusCode, body) {
-  return {
-    statusCode,
+  return new Response(JSON.stringify(body), {
+    status: statusCode,
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  };
+  });
 }
 
 // Maps a database row (snake_case) to the shape the portal's JS already uses
